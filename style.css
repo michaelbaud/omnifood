@@ -17,6 +17,7 @@ GENERAL
 	max-width: 1150px;
 	padding: 80px 20px 80px 20px;
 	margin-top: -25px;
+	margin: auto;
 }
 
 h1, h2, h3 {
@@ -186,19 +187,23 @@ QUATRIEME BLOCK
 	display: flex;
 	font-size: 2em;
 	color: #BF55EC;
-	border: 2px solid #BF55EC;
-	border-radius: 80px;
 	padding: 10px;
 	margin-right: 25px;
-	height: 50px;
+	
 }
 
 .quatriemeBlock .miniBox .numBox .num {
-	margin-top: -5px;
+	border: 1px solid #BF55EC;
+	height:45px;
+	width: 45px;
+	border-radius: 50%;
+	justify-content: center;
+	text-align: center;
+
 }
 
 .quatriemeBlock .miniBox p {
-	
+	margin-top: 7px;
 }
 
 .quatriemeBlock .miniBox .logoDevice {
