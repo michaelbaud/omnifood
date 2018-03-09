@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Omni</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<!-- CSS -->
 
@@ -21,20 +21,38 @@
 	<div class="block banner">
 
 		<!-- header -->
-		<div class="header">
+		<header>
 
-			<div class="logo">
-				<img src="images/logo-white.png">
+			<div class="headerNormal">
+
+				<div class="logo">
+					<img src="images/logo-white.png">
+				</div>
+				
+				<!-- menu normal -->
+				<nav class="nav">
+					<a href="#">FOOD DELIVERY</a>
+					<a href="#">HOW IT WORKS</a>
+					<a href="#">OURS CITIES</a>
+					<a href="#">SIGN UP</a>
+				</nav>
+				<!-- menu normal -->
+				
 			</div>
-			
-			<nav class="nav">
+
+			<!-- menu responsive -->
+			<div class="logoHamb">
+				<a><img src="images/logoMenu.png"></a>
+			</div>
+
+			<nav class="navResp">
 				<a href="#">FOOD DELIVERY</a>
 				<a href="#">HOW IT WORKS</a>
 				<a href="#">OURS CITIES</a>
 				<a href="#">SIGN UP</a>
 			</nav>
-			
-		</div>
+			<!-- menu responsive -->
+		</header>
 		<!-- header -->	
 
 		<!-- main title -->	
@@ -49,14 +67,14 @@
 	<!-- banner -->
 
 	<!-- second block -->
-	<div class="block secondBlock">
+	<div class="block secondBlock marginTop">
 		<div class="containerBox">
 			<div class="middleBox">
 				<h2>Get Food Fast — not fast food.</h2>
 				<div class="surlign"></div>
 				<p>Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
 			</div>
-			<div class="displayFlex">
+			<div class="displayFlex rowToCol">
 				<div class="miniBox">
 					<i class="fas fa-globe fa-4x"></i>
 					<h3>Up to 365 days/year</h3>
@@ -83,7 +101,7 @@
 	<!-- second block -->
 
 	<!-- troisieme block -->
-	<div class="block troisiemeBlock">
+	<div class="block troisiemeBlock marginTop">
 		<div class="gallery">
 			<div class="galleryItem" style="background-image: url('images/1.jpg')"></div>
 			<div class="galleryItem" style="background-image: url('images/2.jpg')"></div>
@@ -100,11 +118,11 @@
 	<!-- troisieme block -->
 
 	<!-- quatrieme block -->
-	<div class="block quatriemeBlock">
+	<div class="block quatriemeBlock marginTop">
 		<div class="containerBox">
 			<h2>How it works — Simple as 1, 2, 3</h2>
 			<div class="surlign"></div>
-			<div class="displayFlex">
+			<div class="displayFlex rowToCol">
 				<div class="miniBox">
 					<img class="iPhone" src="images/app-iPhone.png">
 				</div>
@@ -138,31 +156,198 @@
 	<!-- quatrieme block -->
 
 	<!-- cinquieme block -->
-	<div class="block">
+	<div class="block cinquiemeBlock marginTop">
 		<div class="containerBox">
+
 			<h2>We're currently in these Cities.</h2>
 			<div class="surlign"></div>
-			<div class="displayFlex">
+			
+			<div class="displayFlex rowToCol">
 				<div class="miniBox">
 					<img src="images/lisbon-3.jpg">
 					<h3>Lisbon</h3>
+					<p><i class="far fa-smile bab"></i>  1000+ Happy Eaters </p>
+					<p><i class="far fa-star bab"></i>  50+ Top Chefs</p>
+					<p><i class="fas fa-globe bab"></i><a href="#">   @omnifood_lx</a></p>
 				</div>
 				<div class="miniBox">
 					<img src="images/san-francisco.jpg">
 					<h3>San Francisco</h3>
+					<p><i class="far fa-smile bab"></i>  3700+ happy eaters</p>
+					<p><i class="far fa-star bab"></i>  160+ top chefs </p>
+					<p><i class="fas fa-globe bab"></i><a href="#">   @omnifood_sf</a></p>
 				</div>
 				<div class="miniBox">
 					<img src="images/berlin.jpg">
 					<h3>Berlin</h3>
+					<p><i class="far fa-smile bab"></i>  2300+ happy eaters</p>
+					<p><i class="far fa-star bab"></i>  110+ top chefs</p>
+					<p><i class="fas fa-globe bab"></i><a href="#">   @omnifood_berlin</a></p>
 				</div>
 				<div class="miniBox">
 					<img src="images/london.jpg">
 					<h3>Londre</h3>
+					<p><i class="far fa-smile bab"></i>  1200+ happy eaters </p>
+					<p><i class="far fa-star bab"></i>  50+ Top Chefs</p>
+					<p><i class="fas fa-globe bab"></i><a href="#">   @omnifood_london</a></p>
 				</div>
 			</div>
+
 		</div>
 	</div>
 	<!-- cinquieme block -->
 
+	<!-- banner 2 -->
+	<div class="block banner2">
+		<div class="containerBox">
+			<h2>Our customers depend on our healthy stealthy meals.</h2>
+			
+
+			<div class="displayFlex rowToCol">
+				<div class="miniBox">
+					<img src="images/quotes.png">
+					<p> Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals! </p>
+					<div class="displayFlex">
+						<img class="miniPortrait" src="images/customer-1.jpg">
+						<p>Alberto Duncan</p>
+					</div>
+				</div>
+				<div class="miniBox">
+					<img src="images/quotes.png">
+					<p>Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love! </p>
+					<div class="displayFlex">
+						<img class="miniPortrait" src="images/customer-2.jpg">
+						<p>Joana SilvaMilton Chapman</p>
+					</div>
+				</div>
+				<div class="miniBox">
+					<img src="images/quotes.png">
+					<p>I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!</p>
+					<div class="displayFlex">
+						<img class="miniPortrait" src="images/customer-3.jpg">
+						<p>Milton Chapman</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner 2 -->
+
+	<!-- sixieme block -->
+	<div class="block sixiemeBlock marginTop">
+		<div class="containerBox">
+			<h2>Start eating healthy today</h2>
+			<div class="surlign"></div>
+
+			<div class="displayFlex rowToCol">
+				<div class="miniBox">
+					<h3>Rock-Star</h3>
+					<p class="mauve"><span class="price">$399</span> / month</p>
+					<p>That's only $14.90 per meal</p>
+					<ul>
+						<li><i class="fas fa-check mauve"></i>  1 meal every day</li>
+						<li><i class="fas fa-check mauve"></i>  Order 24/7</li>
+						<li><i class="fas fa-check mauve"></i>  Access to newest creations</li>
+						<li><i class="fas fa-check mauve"></i>  Free delivery</li>
+					</ul>
+					<button class="button is-medium btn1">Sign Up now</button>
+				</div>
+				<div class="miniBox">
+					<h3>Family-Man</h3>
+					<p class="mauve"><span class="price">$149</span> / month</p>
+					<p>That's only $14.90 per meal</p>
+					<ul>
+						<li><i class="fas fa-check mauve"></i>  1 meal 10 days a monthOrder 24/7</li>
+						<li><i class="fas fa-check mauve"></i>  Order 24/7</li>
+						<li><i class="fas fa-check mauve"></i>  Access to newest creationsFree delivery</li>
+						<li><i class="fas fa-check mauve"></i>  Free delivery</li>
+					</ul>
+					<button class="button is-medium btn1">Sign Up now</button>
+				</div>
+				<div class="miniBox">
+					<h3>Budget</h3>
+					<p class="mauve"><span class="price">$19</span> / per meal</p>
+					<p>That's only $14.90 per meal</p>
+					<ul>
+						<li><i class="fas fa-check mauve"></i>  1 mealOrder from 8 am to 12 pm</li>
+						<li><i class="fas fa-check mauve"></i>  Order from 8 am to 12 pm</li>
+						<li><i class="fas fa-times mauve"></i>  N/A</li>
+						<li><i class="fas fa-check mauve"></i>  Free delivery</li>
+					</ul>
+					<button class="button is-medium btn1">Sign Up now</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- sixieme block -->
+
+	<!-- septieme block -->
+	<div class="block septiemeBlock marginTop">
+		<div class="containerBox">
+			<h2>We are happy to hear from you</h2>
+			<div class="surlign"></div>
+
+			<form class="field">
+				<label for="name" class="label">Name</label>
+				<input class="input" type="text" name="name" placeholder="Your Name">
+				<br><br>
+				<label for="mail" class="label">Email</label>
+				<input class="input" type="text" name="mail" placeholder="Your Email">
+				<br><br>
+				<label for="choice" class="label">How did you find us?</label>
+				<select class="select" name="choice">
+					<option>Friends</option>
+					<option>Google</option>
+					<option>Facebook</option>
+					<option>Other</option>
+				</select>
+				<br><br>
+				<label for="news" class="label">News Letter</label>
+				<input type="checkbox" name="news" checked="checked"><i>Yes Please! </i>
+				<br><br>
+				<label for="message" class="label">Drop us a line.</label>
+				<textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+				<br>
+				<button type="submit" class="button btn2">Send it !</button>
+			</form>
+		</div>
+	</div>
+	<!-- septieme block -->
+
+	<!-- footer -->
+	<div class="block">
+		<footer class="footer">
+			<div class="containerBox1">
+				<ul class="floatLeft displayFlex">
+					<li class="margRight"><a href="#">About Us</a></li>
+					<li class="margRight"><a href="#">Blog</a></li>
+					<li class="margRight"><a href="#">Press</a></li>
+					<li class="margRight" class="margRight"><a href="#">IOS Apple</a></li>
+					<li class="margRight"><a href="#">Android App</a></li>
+				</ul>
+				
+				<ul class="floatRight displayFlex">
+					<li class="margLeft"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+					<li class="margLeft"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+					<li class="margLeft" class="margLeft"><a href="#"></a><i class="fab fa-google-plus-g fa-2x"></i></li>
+					<li class="margLeft"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+				</ul>
+
+				<div class="clear"></div>
+				<p>Copyright © 2015 built by Ian Poston</p>
+
+			</div>
+
+		</footer>
+	</div>
+	<!-- footer -->
+
+    <!-- appel de jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- appel de jquery -->
+
+    <!-- utilisation de jquery -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- utilisation de jquery -->
 </body>
 </html>

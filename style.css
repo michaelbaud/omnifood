@@ -92,6 +92,24 @@ p{
 	color: #BF55EC;
 }
 
+.clear {
+	clear: both;
+}
+
+.marginTop{
+	margin-top: -23px;
+}
+
+/* si écran moins de 950px alors... */
+@media screen and (max-width: 950px) {
+	.rowToCol {
+		flex-direction: column;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+}
+
 /*-------------------------------
 BANNER
 -------------------------------*/
@@ -104,31 +122,15 @@ BANNER
 	height: 100vh;
 }
 
-.banner .header {
+.banner .headerNormal {
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-.banner .header .logo img {
+.banner .headerNormal .logo img {
 	float: left;
 	width: 100px;
 	margin-top: 20px;
-}
-
-.banner .header .nav {
-	float: right;
-	margin-top: 55px;
-	font-size: 1.1em;
-}
-
-.banner .header .nav a {
-	margin-left: 40px;
-	color: #fff;
-	font-weight: 100;
-}
-
-.banner .header .nav a:hover {
-	border-bottom: 2px solid #BF55EC;
 }
 
 .banner .mainTitleBox {
@@ -144,11 +146,79 @@ BANNER
 	margin-right: 20px;
 }
 
-/*-------------------------------
-SECOND BLOCK
--------------------------------*/
+/* menu normal */
+
+.banner .headerNormal .nav {
+	float: right;
+	margin-top: 55px;
+	font-size: 1.1em;
+}
+
+.banner .headerNormal .nav a {
+	margin-left: 40px;
+	color: #fff;
+	font-weight: 100;
+}
+
+.banner .headerNormal .nav a:hover {
+	border-bottom: 2px solid #BF55EC;
+}
+
+/* menu responsive */
+
+.logoHamb {
+	position: fixed;
+	z-index: 9999;
+	top: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+}
+
+.navResp {
+	position: fixed;
+	float: left;
+	z-index: 999;
+	height: 100vh;
+	background-color: black;
+	width: 100vw;
+	display: flex;
+	margin-left: -100vw;
+	transition-duration: 0.2s;
+	flex-direction: column;
+}
 
 
+
+.navResp a {
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding-top: 100px;
+	flex: 1;
+}
+
+.navResp_open {
+	margin-left: 0;
+	transition-duration: 0.2s;
+}
+
+/* si écran moins de 950px alors... */
+@media screen and (max-width: 950px) {
+	.nav {
+		display: none;
+	}
+	.logo {
+		width: 70px;
+	}
+}
+
+/* si écran plus de 950px alors... */
+@media screen and (min-width: 950px) {
+	.navResp, .logoHamb {
+		display: none;
+	}
+}
 
 /*-------------------------------
 TROISIEME BLOCK
@@ -211,8 +281,148 @@ QUATRIEME BLOCK
 	margin-right: 15px;
 }
 
+/* si écran moins de 950px alors... */
+@media screen and (max-width: 950px) {
+	.quatriemeBlock .miniBox .iPhone {
+		float: none;
+		margin-left: 30%;
+	}
+}
+
+/*-------------------------------
+BANNER 2
+-------------------------------*/
+
+.banner2 {
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/a.jpg");
+	background-attachment:fixed;
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.banner2 h2, .banner2 p {
+	color: #fff;
+}
+
+.banner2 img {
+	height: 50px;
+}
+
+.banner2 .miniPortrait {
+	border-radius: 50%;
+	margin-right: 10px;
+}
 
 
+/*-------------------------------
+CINQUIEME BLOCK
+-------------------------------*/
+
+.cinquiemeBlock .bab {
+	color: #BF55EC;
+}
+
+.cinquiemeBlock p {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.cinquiemeBlock a {
+	color: #BF55EC;
+}
+
+.cinquiemeBlock a:hover {
+	color: #555564;
+}
+
+/*-------------------------------
+SIXIEME BLOCK
+-------------------------------*/
+
+.sixiemeBlock {
+	background-color: #F4F4F4;
+}
+
+.sixiemeBlock .miniBox {
+	background-color: #fff;
+}
+
+.sixiemeBlock .mauve {
+	color: #BF55EC;
+}
+
+.sixiemeBlock .price {
+	font-size: 1.8em;
+}
+
+.sixiemeBlock .btn1 {
+	margin-top: 20px;
+	color: #4A4A4A;
+}
+
+.sixiemeBlock .btn1:hover {
+	color: #BF55EC;
+}
+
+/*-------------------------------
+SEPTIEME BLOCK
+-------------------------------*/
+
+.septiemeBlock form {
+	max-width: 600px;
+	margin: auto;
+}
+
+.septiemeBlock .btn2 {
+	color: #4A4A4A;
+}
+
+.septiemeBlock .btn2:hover {
+	color: #BF55EC;
+}
+
+/*-------------------------------
+FOOTER BLOCK
+-------------------------------*/
+
+.footer {
+	background-color: #333333;
+	height: 220px;
+	color: #888888;
+}
+
+.footer a {
+	color: #888888;
+	font-size: 1.1em;
+}
+
+.footer .floatLeft {
+	float: left;
+}
+
+.footer .floatRight {
+	float: right;
+}
+
+.footer .containerBox1 {
+	max-width: 1150px;
+	padding: 30px 20px 0px 20px;
+	margin-top: -25px;
+	margin: auto;
+}
+
+.footer .margRight {
+	margin-right: 20px;
+}
+
+.footer .margLeft {
+	margin-left: 20px;
+}
+
+.footer p {
+	text-align: center;
+}
 
 
 
