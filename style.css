@@ -101,7 +101,7 @@ p{
 }
 
 /* si écran moins de 950px alors... */
-@media screen and (max-width: 950px) {
+@media all and (max-width: 950px) {
 	.rowToCol {
 		flex-direction: column;
 	}
@@ -204,7 +204,7 @@ BANNER
 }
 
 /* si écran moins de 950px alors... */
-@media screen and (max-width: 950px) {
+@media all and (max-width: 950px) {
 	.nav {
 		display: none;
 	}
@@ -214,7 +214,7 @@ BANNER
 }
 
 /* si écran plus de 950px alors... */
-@media screen and (min-width: 950px) {
+@media all and (min-width: 950px) {
 	.navResp, .logoHamb {
 		display: none;
 	}
@@ -282,7 +282,7 @@ QUATRIEME BLOCK
 }
 
 /* si écran moins de 950px alors... */
-@media screen and (max-width: 950px) {
+@media all and (max-width: 950px) {
 	.quatriemeBlock .miniBox .iPhone {
 		float: none;
 		margin-left: 30%;
