@@ -108,6 +108,22 @@ p{
 	h1 {
 		font-size: 1.5em;
 	}
+	.containerBox {
+		padding: 30px 20px 80px 20px;
+	}
+}
+
+/* si écran moins de 740px alors... */
+@media all and (max-width: 740px) {
+	.rowToCol {
+		flex-direction: column;
+	}
+	h1 {
+		font-size: 1em;
+	}
+	.button.is-large {
+		font-size: 1em;
+	}
 }
 
 /*-------------------------------
@@ -386,6 +402,10 @@ SEPTIEME BLOCK
 FOOTER BLOCK
 -------------------------------*/
 
+.block:last-child {
+	margin-bottom: 0;
+}
+
 .footer {
 	background-color: #333333;
 	height: 220px;
@@ -422,6 +442,22 @@ FOOTER BLOCK
 
 .footer p {
 	text-align: center;
+}
+
+/* si écran moins de 950px alors... */
+@media all and (max-width: 950px) {
+	.footer {
+		font-size: 0.7em;
+	}
+	.footer .floatRight {
+		float: inherit;
+		text-align: center;
+		padding: auto
+	}
+	.footer .floatLeft {
+		float: inherit;
+		text-align: center;
+	}
 }
 
 
